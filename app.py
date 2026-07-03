@@ -5,6 +5,7 @@ import google.generativeai as genai
 # تذكر: هذا الكود سيعمل عندما ترفعه على Streamlit Cloud
 # استبدل "YOUR_API_KEY" بمفتاحك الحقيقي
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
