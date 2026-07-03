@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-# إعداد الـ API
+# إعداد الـ AP
 # تذكر: هذا الكود سيعمل عندما ترفعه على Streamlit Cloud
 # استبدل "YOUR_API_KEY" بمفتاحك الحقيقي
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
