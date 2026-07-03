@@ -7,8 +7,6 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel('gemini-2.0-flash')
 
-model = genai.GenerativeModel('gemini-1.5-flash')
-
 st.title("NOVA-BEAST App")
 
 if "messages" not in st.session_state:
