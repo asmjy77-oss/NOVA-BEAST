@@ -4,7 +4,8 @@ import google.generativeai as genai
 # إعداد الـ API
 # تذكر: هذا الكود سيعمل عندما ترفعه على Streamlit Cloud
 # استبدل "YOUR_API_KEY" بمفتاحك الحقيقي
-genai.configure(api_key="AQ.Ab8RN6IgvRPgg0Bf_BTDJZKtTbSbEczFGiewXz2ec2ufWFGHOA") 
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 st.title("NOVA-BEAST App")
